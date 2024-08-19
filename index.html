@@ -4,11 +4,97 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>SalesFlow</title>
+
+      <!-- Tailwind & DaisyUi -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+
+
+      <!-- Font-logo Font Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+      <!-- Font-title Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+      <!-- Font Roboto -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+      <!-- CSS -->
+      <style>
+            .font-logo{
+                  font-family: "Leckerli One", cursive;
+            }
+            .font-lilita{
+                   font-family: "Lilita One", sans-serif;
+            }
+            .roboto{
+                  font-family: "Roboto", sans-serif;
+            }
+      </style>
 </head>
-<body> 
+<body class=""> 
       <!-- Header content goes here -->
-      <header>
+      <header class="bg-[#161C2D] ">
+            <div class="navbar  text-white max-w-screen-xl mx-auto">
+                  <div class="navbar-start text-white">
+                        <div class="dropdown">
+                              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                          stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                              </div>
+                              <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow roboto">
+                                    <li><a>Item 1</a></li>
+                                    <li>
+                                          <a>Parent</a>
+                                    </li>
+                                    <li><a>Item 3</a></li>
+                              </ul>
+                        </div>
+                        <a class="btn btn-ghost text-2xl font-logo">SalesFlow</a>
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 roboto">
+                              <li><a>Item 1</a></li>
+                              <li>
+                                    <a>Parent</a>
+                              </li>
+                              <li><a>Item 3</a></li>
+                        </ul>
+                  </div>
+                  <div class="navbar-end">
+                        <a class="btn bg-[#473BF0] text-white border-none roboto">Start a free trial</a>
+                  </div>
+            </div>
+
+
+
+            <div class="hero min-h-[91vh] text-white">
+                  <div class="hero-content flex-col lg:flex-row-reverse xl:gap-52">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VCPGMjCW0is?si=s-T0nf28QFPRvchM"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div>
+                              <h1 class=" text-5xl xl:text-6xl font-bold font-lilita">Get more visitors,<br> get more sales.</h1>
+                              <p class="py-6 roboto text-sm text-[#efefef]">
+                                    With lots of unique blocks, you can easily build a page without coding. <br> Build your next consultancy website within few
+                                    minutes.
+                              </p>
+                              <button class="btn btn-primary roboto text-green-500 bg-transparent border-none">Start a free trial</button>
+                        </div>
+                  </div>
+            </div>
           
       </header>
       
